@@ -29,7 +29,80 @@ Ce workflow repose sur le modèle **Feature Branching**, facilitant le développ
 
 ### 1. Se baser sur la branche `develop`
 
-```bash
+```
 git checkout develop
 git pull
+```
 
+Créer une branche de fonctionnalité
+```
+git checkout -b feature/nom-fonctionnalité
+```
+
+Exemples :
+
+* feature/login-api
+
+* feature/page-dashboard
+
+Développer la fonctionnalité
+
+Commits clairs et réguliers
+
+Respect des conventions de code
+
+Petites étapes : "commit early, commit often"
+
+Pousser la branche
+```
+git push -u origin feature/nom-fonctionnalité
+```
+
+Ouvrir une Pull Request (PR) vers develop
+
+
+
+* Revue & fusion de la PR
+
+* Relecture par au moins 1 reviewer
+
+* Fusion via GitHub / GitLab / Bitbucket (pas de merge local direct)
+
+* Pas de suppression de la branche une fois fusionnée, car réutilisée pour une même fonctionnalité
+
+
+
+
+Les versions prêtes pour la production dans dev sont mergées dans main.
+
+🔥 Corrections urgentes (hotfix/)
+
+Créer à partir de main :
+
+```
+git checkout main
+git pull
+git checkout -b hotfix/nom-correction
+```
+
+
+
+🧭 Exemple visuel
+main
+ └───┬─────────────┐
+     │             │
+     |            hotfix/bug-urgent
+     │             │
+ develop
+   ├─ feature/login
+   ├─ feature/dashboard
+   └─ feature/api-refacto
+
+
+📞 Contact / Référent technique
+
+Nom : [à compléter]
+
+Mail : [à compléter]
+
+Slack : #dev-workflow
