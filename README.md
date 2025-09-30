@@ -106,3 +106,26 @@ Nom : [à compléter]
 Mail : [à compléter]
 
 Slack : #dev-workflow
+
+## Nomenclature des messages des commit
+
+[numéro de ticket][action] message
+
+**Action**
+
+**[CREATE]** : pour une création.
+
+**[REMOVE]** : pour une suppression.
+
+**[MODIF]** : pour une modification.
+
+## Numéro des tickes en cours 
+
+**[130]** : Developpement de la page d'acceuil du site 
+
+**[131]** : Developpement d'une page "about" sur la description de l'entreprise
+
+**[132]** : Developpement d'une page décrivant les services proposés par l'entreprise
+
+**[133]** : Developpement d'une page de contact. 
+
